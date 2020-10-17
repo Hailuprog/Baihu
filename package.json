@@ -1,13 +1,13 @@
 {
-  "name": "GalackRaid",
-  "version": "1.0.0",
+  "name": "glkBaihu",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "GalackQSM#7926",
-  "license": "GalackQSM",
+  "author": "AFTER",
+  "license": "CHANGE ALPHA",
   "dependencies": {
     "chalk": "^4.1.0",
     "discord.js": "12",
